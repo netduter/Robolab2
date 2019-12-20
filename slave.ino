@@ -15,7 +15,7 @@ void loop() {
   char c;  
   
   do{
-    while(Serial.available()==0);
+    while(Serial.available()==0);// Ο slave περιμένει μέχρι ο master να στείλει μήνυμα προκειμένου να παίξει κάποια νότα.
     
 
     c=Serial.read();
@@ -24,12 +24,11 @@ void loop() {
     
   }while(c!='\n' && c!='\r');
 
-  if(msg.toInt()==-1){
-
+  if(msg.toInt()==-1){ // Ο master στέλνει "-1" αν θελει ο slave να σταματήσει την αναπαραγωγή κάποιας νότας.
     noTone(6);
   }else{
 
-    if(msg.length()>1){
+    if(msg.length()>1){//Εξασφαλίζει ότι θα αγνοηθούν πιθανά σκουπίδια.
 
 
         previousNote = msg.toInt();
