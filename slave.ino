@@ -1,5 +1,3 @@
-SoftwareSerial mySerial(2, 3); // RX, TX
-
 int previousNote = 0;
 
 void setup() {
