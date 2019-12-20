@@ -7,4 +7,5 @@
 <br>
 
 
-[![Watch the video](https://drive.google.com/file/d/1DRxVLbCN1KyGqKu9gNIwt4F_yH1wCyEF/view?usp=sharing)]
+
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://drive.google.com/open?id=18HjEp41k-VYQMAEE2kKKZhl84zeG9pIg)
